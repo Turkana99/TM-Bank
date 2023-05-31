@@ -1,0 +1,43 @@
+.nav-link {
+    padding: 6px 30px !important;
+    color: black!important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .router-link-active {
+    background-color: #FF424D !important;
+    color: white !important;
+    border-radius: 20px;
+  }
+  
+  .navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white !important;
+    position: fixed;
+    z-index: 100000;
+  }
+  
+  .navbar-collapse {
+    flex-grow: 0 !important;
+  }
+  
+  .my_logo img {
+    width: 80px;
+    height: 70px;
+  }
+  
+  .my_title {
+    padding-top: 16px;
+  }
+  
+  .my_title a {
+    font-size: 28px !important;
+    font-weight: 600;
+    color: #0071BD;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  
