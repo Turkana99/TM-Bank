@@ -33,20 +33,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {
-  MatDatetimepickerModule,
-  MatNativeDatetimeModule,
-} from '@mat-datetimepicker/core';
-import { MatSelectFilterModule } from 'mat-select-filter';
-import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
+
 
 
 @NgModule({
   exports: [
-    NgxMatSelectSearchModule,
-    MatSelectFilterModule,
-    MatDatetimepickerModule,
-    MatNativeDatetimeModule,
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,

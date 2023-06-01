@@ -1,0 +1,55 @@
+
+.tab-content{
+    width: 1300px;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+}
+span {
+    font-size: 15px;
+}
+i{
+    font-size: 50px;
+    color: #0071BD;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none!important;
+    color: #0071BD;
+}
+.box {
+    padding: 60px 0px;
+}
+
+.box-part {
+    background: #FFF;
+    border-radius: 0;
+    padding: 60px 10px;
+    margin: 0px 0px 30px 0px; 
+    border: 1px solid #E2E2E2;
+    padding: 60px;
+}
+.box-part:hover{
+    background-color: #0071BD;
+    color: white;
+    a{
+        color: white!important;
+    }
+    i{
+        color: white;
+    }
+}
+.text {
+    margin: 20px 0px;
+}
+
+.fa {
+    color: #0071BD;
+}
+
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label{
+    color: #0071BD!important;
+}
+::ng-deep .mat-ink-bar {
+    background-color:#0071BD !important;
+}

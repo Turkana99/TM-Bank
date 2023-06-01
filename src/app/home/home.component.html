@@ -1,0 +1,116 @@
+<div class="tab-content d-flex flex-column align-items-center
+justify-content-center">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center"
+        class="pt-3">
+        <mat-tab label="Payment type">
+            <div class="box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="box-part text-center">
+                                <i class="fa-brands fa-cc-visa"></i>
+                                <div class="title">
+                                    <h4>Kredit</h4>
+                                </div>
+                                <div class="text">
+                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
+                                        Elitr
+                                        scripta ocurreret qui ad.</span>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="box-part text-center">
+                                <i class="fa-solid fa-house-user"></i>
+                                <div class="title">
+                                    <h4>Ipoteka</h4>
+                                </div>
+                                <div class="text">
+                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
+                                        Elitr
+                                        scripta ocurreret qui ad.</span>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="box-part text-center">
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                                <div class="title">
+                                    <h4>Cərimə</h4>
+                                </div>
+                                <div class="text">
+                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
+                                        Elitr
+                                        scripta ocurreret qui ad.</span>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="box-part text-center">
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                                <div class="title">
+                                    <h4>Cərimə</h4>
+                                </div>
+                                <div class="text">
+                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
+                                        Elitr
+                                        scripta ocurreret qui ad.</span>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="box-part text-center">
+                                <i class="fa-brands fa-cc-visa"></i>
+                                <div class="title">
+                                    <h4>Kredit</h4>
+                                </div>
+                                <div class="text">
+                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
+                                        Elitr
+                                        scripta ocurreret qui ad.</span>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="box-part text-center">
+                                <i class="fa-solid fa-house-user"></i>
+                                <div class="title">
+                                    <h4>İpoteka</h4>
+                                </div>
+                                <div class="text">
+                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
+                                        Elitr
+                                        scripta ocurreret qui ad.</span>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="General Info">
+            <form [formGroup]="myForm" (ngOnSubmit)="submit()">
+                <div class="box my_info">
+                <ng-container formArrayName="info">
+                  <div *ngFor="let InfoForm of info?.controls; let i = index">
+                    <div [formGroup]="InfoForm">
+                      <input type="text" formControlName="name" />
+                      <input type="text" formControlName="skills" />
+                    </div>
+                    <button (click)="delete(i)">Delete</button>
+                  </div>
+                </ng-container>
+            </div>
+              </form>
+              <button (click)="add()">Add</button>
+        </mat-tab>
+        <mat-tab label="Payment Detail">Content 3</mat-tab>
+    </mat-tab-group>
+</div>
